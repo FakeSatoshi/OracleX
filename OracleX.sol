@@ -282,6 +282,10 @@ contract OracleX is Ownable{
         return(q.bounty,q.startTime,q.endTime,q.question,q.exampleAnswerFormat,q.totalVotes,q.answerAhead,q.timeGotAhead,q.answerAheadTime,q.isFinalized);
     }
     
+    function totalNumberOfQueries() public view returns(uint){
+        return(nextQueryId);
+    }
+    
 }
 /*-------LIBRARIES-------*/
 
